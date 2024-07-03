@@ -7,10 +7,10 @@ require_once __DIR__ . "/Category.php";
  * Create a class Category obj
  */
 class Category {
-    private $category;
+    private $name;
 
-    public function __construct($category){
-        $this -> category = $category;
+    public function __construct($name){
+        $this -> name = $name;
     }
 
     /**
@@ -18,8 +18,8 @@ class Category {
      *
      * @return void
      */
-    public function getCategory(){
-        return $this -> category;
+    public function getName(){
+        return $this -> name;
     }
 
     /**
@@ -28,8 +28,8 @@ class Category {
      * @param [string] $category
      * @return void
      */
-    public function setCategory($category){
-        return $this -> category = $category;
+    public function setName($name){
+        return $this -> name = $name;
     }
 }
 

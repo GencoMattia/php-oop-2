@@ -18,9 +18,35 @@ $article1 = new Food ("Royal Canin Mini Adult","43,99", "https://arcaplanet.vtex
     <title>Boolshop</title>
 </head>
 <body>
+    <header>
+        <h1>
+            Boolshop
+        </h1>
+    </header>
     <main>
-        <section>
-            
+        <section class="article-wrapper">
+            <article class="item-card">
+                <div class="item-img">
+                    <img src="<?php echo $article1->getImgUrl(); ?>" alt="<?php echo $article1->getName(); ?>">
+                </div>
+                <div class="item-info">
+                    <h2 class="item-name">
+                        <?php echo $article1->getName(); ?>
+                    </h2>
+                    <p class="item-category">
+                        <?php echo $article1->getCategory()->getName() ?>
+                    </p>
+                    <p class="item-price">
+                        <?php echo $article1->getPrice(); ?>
+                    </p>
+                    <p class="item-weight">
+                        <?php echo $article1->getWeight(); ?>
+                    </p>
+                    <p class="item-ingredients">
+                        <?php echo $article1->getIngredients(); ?>
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
 </body>

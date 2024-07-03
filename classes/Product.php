@@ -90,7 +90,7 @@ class Product {
      * @param [string] $category
      * @return void
      */
-    public function setCategory($category){
+    public function setCategory(Category $category){
         return $this -> category = $category;
     }
 }
