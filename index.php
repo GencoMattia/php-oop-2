@@ -45,9 +45,11 @@ $playthingArticle1 = new Plaything (
 </head>
 <body>
     <header>
-        <h1>
-            Boolshop
-        </h1>
+        <section>
+            <h1>
+                Boolshop
+            </h1>
+        </section>
     </header>
     <main>
         <section class="article-wrapper">
