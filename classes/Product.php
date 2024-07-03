@@ -80,7 +80,7 @@ class Product {
      *
      * @return void
      */
-    public function getCategory(){
+    public function getCategory(): Category {
         return $this -> category;
     }
 
