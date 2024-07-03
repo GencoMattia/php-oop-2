@@ -21,10 +21,10 @@ section {
 .item-card { 
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: calc(100% / 3 - 3rem);
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 0 1rem 1rem 0;
 }
 .item-img {
     width: 100%;
