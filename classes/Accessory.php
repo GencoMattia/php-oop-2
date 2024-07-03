@@ -1,5 +1,9 @@
 <?php 
 
+require_once __DIR__ . "/Product.php";
+require_once __DIR__ . "/Category.php";
+
+
 /**
  * Create a Accessory class obj
  */

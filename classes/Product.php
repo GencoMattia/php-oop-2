@@ -1,4 +1,7 @@
 <?php 
+
+require_once __DIR__ . "/Category.php";
+
 /**
  * Create a class Product obj
  */
@@ -8,7 +11,7 @@ class Product {
     private $imgUrl;
     private $category;
 
-    public function __construct($name, $price, $imgUrl, $category){
+    public function __construct($name, $price, $imgUrl, Category $category){
         $this -> name = $name;
         $this -> price = $price;
         $this -> imgUrl = $imgUrl;
