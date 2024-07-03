@@ -16,6 +16,9 @@ $article1 = new Food ("Royal Canin Mini Adult","43,99", "https://arcaplanet.vtex
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolshop</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
