@@ -1,5 +1,8 @@
 <?php 
 
+/**
+ * Create a Plaything class obj
+ */
 class Plaything extends Product {
     private $characteristic;
     private $size;

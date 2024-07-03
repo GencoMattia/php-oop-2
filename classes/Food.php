@@ -1,5 +1,7 @@
 <?php 
-
+/**
+ * Create a Food class obj
+ */
 class Food extends Product {
     private $ingredients;
     private $weight;

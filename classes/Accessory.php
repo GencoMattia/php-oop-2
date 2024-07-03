@@ -1,5 +1,8 @@
 <?php 
 
+/**
+ * Create a Accessory class obj
+ */
 class Accessory extends Product {
     private $material;
     private $size;
