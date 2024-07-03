@@ -5,31 +5,9 @@ require_once __DIR__ . "/classes/Food.php";
 require_once __DIR__ . "/classes/Plaything.php";
 require_once __DIR__ . "/classes/Accessory.php";
 require_once __DIR__ . "/classes/Category.php";
-
-$foodArticle1 = new Food (
-    "Royal Canin Mini Adult",
-    "43,99", 
-    "https://arcaplanet.vtexassets.com/arquivos/ids/300306/Royal-Canin-Mini-Adult-Alimento-Completo-per-Cani-Adulti-di-Piccola-Taglia-10120604-1.jpg", 
-    new Category("Cane"), 
-    "prosciutto, Riso", 
-    545
-);
-$accessoryArticle1 = new Accessory (
-    "Voliera Wilma in Legno",
-    "184,99", 
-    "https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg", 
-    new Category("Uccello"), 
-    "Legno", 
-    "M: L.83 x P.67 x H.153"
-);
-$playthingArticle1 = new Plaything (
-    "Kong Classic",
-    "13,49",
-    "https://arcaplanet.vtexassets.com/arquivos/ids/256599/kong-classic1.jpg",
-    new Category("Cane"),
-    "Galleggia e rimbalza",
-    "8,5 cm x 10 cm"
-);
+require_once __DIR__ . "/objects/food_objs.php";
+require_once __DIR__ . "/objects/accessory_objs.php";
+require_once __DIR__ . "/objects/plaything_objs.php";
 
 ?>
 
@@ -58,7 +36,7 @@ $playthingArticle1 = new Plaything (
             </h1>
         </section>
         <section class="article-wrapper">
-            <article class="item-card">
+            <article class="food item-card">
                 <div class="item-img">
                     <img src="<?php echo $foodArticle1->getImgUrl(); ?>" alt="<?php echo $foodArticle1->getName(); ?>">
                 </div>
@@ -80,7 +58,73 @@ $playthingArticle1 = new Plaything (
                     </p>
                 </div>
             </article>
-            <article class="item-card">
+            <article class="food item-card">
+                <div class="item-img">
+                    <img src="<?php echo $foodArticle2->getImgUrl(); ?>" alt="<?php echo $foodArticle2->getName(); ?>">
+                </div>
+                <div class="item-info">
+                    <h2 class="item-name">
+                        <?php echo $foodArticle2->getName(); ?>
+                    </h2>
+                    <p class="item-category">
+                        <?php echo $foodArticle2->getCategory()->getName(); ?>
+                    </p>
+                    <p class="item-price">
+                        <?php echo $foodArticle2->getPrice(); ?>
+                    </p>
+                    <p class="item-weight">
+                        <?php echo $foodArticle2->getWeight(); ?>
+                    </p>
+                    <p class="item-ingredients">
+                        <?php echo $foodArticle2->getIngredients(); ?>
+                    </p>
+                </div>
+            </article>
+            <article class="food item-card">
+                <div class="item-img">
+                    <img src="<?php echo $foodArticle3->getImgUrl(); ?>" alt="<?php echo $foodArticle3->getName(); ?>">
+                </div>
+                <div class="item-info">
+                    <h2 class="item-name">
+                        <?php echo $foodArticle3->getName(); ?>
+                    </h2>
+                    <p class="item-category">
+                        <?php echo $foodArticle3->getCategory()->getName(); ?>
+                    </p>
+                    <p class="item-price">
+                        <?php echo $foodArticle3->getPrice(); ?>
+                    </p>
+                    <p class="item-weight">
+                        <?php echo $foodArticle3->getWeight(); ?>
+                    </p>
+                    <p class="item-ingredients">
+                        <?php echo $foodArticle3->getIngredients(); ?>
+                    </p>
+                </div>
+            </article>
+            <article class="food item-card">
+                <div class="item-img">
+                    <img src="<?php echo $foodArticle4->getImgUrl(); ?>" alt="<?php echo $foodArticle4->getName(); ?>">
+                </div>
+                <div class="item-info">
+                    <h2 class="item-name">
+                        <?php echo $foodArticle4->getName(); ?>
+                    </h2>
+                    <p class="item-category">
+                        <?php echo $foodArticle4->getCategory()->getName(); ?>
+                    </p>
+                    <p class="item-price">
+                        <?php echo $foodArticle4->getPrice(); ?>
+                    </p>
+                    <p class="item-weight">
+                        <?php echo $foodArticle4->getWeight(); ?>
+                    </p>
+                    <p class="item-ingredients">
+                        <?php echo $foodArticle4->getIngredients(); ?>
+                    </p>
+                </div>
+            </article>
+            <article class="accessory item-card">
                 <div class="item-img">
                     <img src="<?php echo $accessoryArticle1->getImgUrl(); ?>" alt="<?php echo $accessoryArticle1->getName(); ?>">
                 </div>
@@ -102,7 +146,29 @@ $playthingArticle1 = new Plaything (
                     </p>
                 </div>
             </article>
-            <article class="item-card">
+            <article class="accessory item-card">
+                <div class="item-img">
+                    <img src="<?php echo $accessoryArticle2->getImgUrl(); ?>" alt="<?php echo $accessoryArticle2->getName(); ?>">
+                </div>
+                <div class="item-info">
+                    <h2 class="item-name">
+                        <?php echo $accessoryArticle2->getName(); ?>
+                    </h2>
+                    <p class="item-category">
+                        <?php echo $accessoryArticle2->getCategory()->getName(); ?>
+                    </p>
+                    <p class="item-price">
+                        <?php echo $accessoryArticle2->getPrice(); ?>
+                    </p>
+                    <p class="item-Material">
+                        <?php echo $accessoryArticle2->getMaterial(); ?>
+                    </p>
+                    <p class="item-size">
+                        <?php echo $accessoryArticle2->getSize(); ?>
+                    </p>
+                </div>
+            </article>
+            <article class="plaything item-card">
                 <div class="item-img">
                     <img src="<?php echo $playthingArticle1->getImgUrl(); ?>" alt="<?php echo $playthingArticle1->getName(); ?>">
                 </div>
@@ -121,6 +187,28 @@ $playthingArticle1 = new Plaything (
                     </p>
                     <p class="item-ingredients">
                         <?php echo $playthingArticle1->getSize(); ?>
+                    </p>
+                </div>
+            </article>
+            <article class="plaything item-card">
+                <div class="item-img">
+                    <img src="<?php echo $playthingArticle2->getImgUrl(); ?>" alt="<?php echo $playthingArticle2->getName(); ?>">
+                </div>
+                <div class="item-info">
+                    <h2 class="item-name">
+                        <?php echo $playthingArticle2->getName(); ?>
+                    </h2>
+                    <p class="item-category">
+                        <?php echo $playthingArticle2->getCategory()->getName(); ?>
+                    </p>
+                    <p class="item-price">
+                        <?php echo $playthingArticle2->getPrice(); ?>
+                    </p>
+                    <p class="item-weight">
+                        <?php echo $playthingArticle2->getCharacteristic(); ?>
+                    </p>
+                    <p class="item-ingredients">
+                        <?php echo $playthingArticle2->getSize(); ?>
                     </p>
                 </div>
             </article>
