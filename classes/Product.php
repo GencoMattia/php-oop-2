@@ -5,11 +5,13 @@
 class Product {
     private $name;
     private $price;
+    private $imgUrl;
     private $category;
 
-    public function __construct($name, $price, $category){
+    public function __construct($name, $price, $imgUrl, $category){
         $this -> name = $name;
         $this -> price = $price;
+        $this -> imgUrl = $imgUrl;
         $this -> category = $category;
     }
 
@@ -49,6 +51,25 @@ class Product {
      */
     public function setPrice($price){
         return $this -> price = $price;
+    }
+
+    /**
+     * return Product class instance imgUrl
+     *
+     * @return void
+     */
+    public function getImgUrl(){
+        return $this -> imgUrl;
+    }
+
+    /**
+     * set $imgUrl Product class instance as a string
+     *
+     * @param [string] $price
+     * @return void
+     */
+    public function setImgUrl($imgUrl){
+        return $this -> imgUrl = $imgUrl;
     }
 
     /**
