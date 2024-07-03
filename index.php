@@ -52,6 +52,11 @@ $playthingArticle1 = new Plaything (
         </section>
     </header>
     <main>
+        <section class="main-header">
+            <h1>
+                I nostri prodotti
+            </h1>
+        </section>
         <section class="article-wrapper">
             <article class="item-card">
                 <div class="item-img">
