@@ -34,7 +34,7 @@ $article1 = new Food ("Royal Canin Mini Adult","43,99", "https://arcaplanet.vtex
                         <?php echo $article1->getName(); ?>
                     </h2>
                     <p class="item-category">
-                        <?php echo $article1->getCategory()->getName() ?>
+                        <?php echo $article1->getCategory()->getName(); ?>
                     </p>
                     <p class="item-price">
                         <?php echo $article1->getPrice(); ?>
