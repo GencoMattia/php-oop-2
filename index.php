@@ -6,7 +6,7 @@ require_once __DIR__ . "/classes/Plaything.php";
 require_once __DIR__ . "/classes/Accessory.php";
 require_once __DIR__ . "/classes/Category.php";
 
-$article1 = new Food (
+$FoodArticle1 = new Food (
     "Royal Canin Mini Adult",
     "43,99", 
     "https://arcaplanet.vtexassets.com/arquivos/ids/300306/Royal-Canin-Mini-Adult-Alimento-Completo-per-Cani-Adulti-di-Piccola-Taglia-10120604-1.jpg", 
@@ -14,7 +14,7 @@ $article1 = new Food (
     "prosciutto, Riso", 
     545
 );
-$article2 = new Accessory (
+$AccessoryArticle1 = new Accessory (
     "Voliera Wilma in Legno",
     "184,99", 
     "https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg", 
@@ -45,45 +45,45 @@ $article2 = new Accessory (
         <section class="article-wrapper">
             <article class="item-card">
                 <div class="item-img">
-                    <img src="<?php echo $article1->getImgUrl(); ?>" alt="<?php echo $article1->getName(); ?>">
+                    <img src="<?php echo $FoodArticle1->getImgUrl(); ?>" alt="<?php echo $FoodArticle1->getName(); ?>">
                 </div>
                 <div class="item-info">
                     <h2 class="item-name">
-                        <?php echo $article1->getName(); ?>
+                        <?php echo $FoodArticle1->getName(); ?>
                     </h2>
                     <p class="item-category">
-                        <?php echo $article1->getCategory()->getName(); ?>
+                        <?php echo $FoodArticle1->getCategory()->getName(); ?>
                     </p>
                     <p class="item-price">
-                        <?php echo $article1->getPrice(); ?>
+                        <?php echo $FoodArticle1->getPrice(); ?>
                     </p>
                     <p class="item-weight">
-                        <?php echo $article1->getWeight(); ?>
+                        <?php echo $FoodArticle1->getWeight(); ?>
                     </p>
                     <p class="item-ingredients">
-                        <?php echo $article1->getIngredients(); ?>
+                        <?php echo $FoodArticle1->getIngredients(); ?>
                     </p>
                 </div>
             </article>
             <article class="item-card">
                 <div class="item-img">
-                    <img src="<?php echo $article2->getImgUrl(); ?>" alt="<?php echo $article2->getName(); ?>">
+                    <img src="<?php echo $AccessoryArticle1->getImgUrl(); ?>" alt="<?php echo $AccessoryArticle1->getName(); ?>">
                 </div>
                 <div class="item-info">
                     <h2 class="item-name">
-                        <?php echo $article2->getName(); ?>
+                        <?php echo $AccessoryArticle1->getName(); ?>
                     </h2>
                     <p class="item-category">
-                        <?php echo $article2->getCategory()->getName(); ?>
+                        <?php echo $AccessoryArticle1->getCategory()->getName(); ?>
                     </p>
                     <p class="item-price">
-                        <?php echo $article2->getPrice(); ?>
+                        <?php echo $AccessoryArticle1->getPrice(); ?>
                     </p>
                     <p class="item-Material">
-                        <?php echo $article2->getMaterial(); ?>
+                        <?php echo $AccessoryArticle1->getMaterial(); ?>
                     </p>
                     <p class="item-size">
-                        <?php echo $article2->getSize(); ?>
+                        <?php echo $AccessoryArticle1->getSize(); ?>
                     </p>
                 </div>
             </article>
