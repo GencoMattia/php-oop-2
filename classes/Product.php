@@ -78,7 +78,7 @@ class Product {
     /**
      * return Product class instance category
      *
-     * @return void
+     * @return Category
      */
     public function getCategory(): Category {
         return $this -> category;
@@ -88,7 +88,7 @@ class Product {
      * set $category Product class instance as a string
      *
      * @param [string] $category
-     * @return void
+     * @return Category
      */
     public function setCategory(Category $category){
         return $this -> category = $category;
